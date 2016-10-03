@@ -14,7 +14,7 @@ config create_schema: true, load_new: true, load_threads: 3
 // Define the data input source (a file which can be specified via command line arguments)
 // inputfiledir is the directory for the input files
 
-inputfiledir = '/mnt/hgfs/workspace/trivadis-subversion/bigdata-cra/trunk/scripts/ekg_v10/csv/'
+inputfiledir = '/home/marco/enterprise-knowledge-graph/dse/csv/'
 employeeInput = File.csv(inputfiledir + "employee2.csv").delimiter(',')
 termInput = File.csv(inputfiledir + "term2.csv").delimiter(',')
 employeeTermInput = File.csv(inputfiledir + "employeeTerm2.csv").delimiter(',')
